@@ -1,21 +1,12 @@
-##################
-# Function for calculation of the number of degrees to basal species
-# Returns a vector of the distance to the base for every species
-# Producers have a default distance of 1
-# Unconnected species have a distance of 0
-# October 2011
-# by Dominique Gravel
-##################
-
-
-#' Title
+#' Calculation of the number of degrees to basal species
 #'
 #' @param L
 #'
-#' @return
+#' @return A vector of the distance to the base for every species. Producers have a default distance of 1. Unconnected species have a distance of 0
 #' @export
 #'
 #' @examples
+#' @author Dominique Gravel
 dbase_fn = function(L) {
   NS = nrow(L)
 
@@ -38,4 +29,5 @@ dbase_fn = function(L) {
 		}
 	return(rk)
 }
+
 

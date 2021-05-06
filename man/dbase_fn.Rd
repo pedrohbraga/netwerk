@@ -2,7 +2,7 @@
 % Please edit documentation in R/dbase_fn_dom.R
 \name{dbase_fn}
 \alias{dbase_fn}
-\title{Title}
+\title{Calculation of the number of degrees to basal species}
 \usage{
 dbase_fn(L)
 }
@@ -10,8 +10,11 @@ dbase_fn(L)
 \item{L}{}
 }
 \value{
-
+A vector of the distance to the base for every species. Producers have a default distance of 1. Unconnected species have a distance of 0
 }
 \description{
-Title
+Calculation of the number of degrees to basal species
+}
+\author{
+Dominique Gravel
 }

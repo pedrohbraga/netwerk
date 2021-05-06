@@ -38,7 +38,7 @@ usethis::use_mit_license(copyright_holder = "Pedro Henrique Pereira Braga")
 usethis::use_r("dbase_fn")
 
 ## Test
-use_test("testing_during_the_workshop")
+use_test("testing_the_dbase_fn")
 
 ## Add data
 x <- 1
