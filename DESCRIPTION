@@ -19,3 +19,5 @@ Suggests:
 URL: https://github.com/pedrohbraga/netwerk
 BugReports: https://github.com/pedrohbraga/netwerk/issues
 Config/testthat/edition: 3
+Depends: 
+    R (>= 2.10)

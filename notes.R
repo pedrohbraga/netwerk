@@ -35,7 +35,7 @@ usethis::use_build_ignore("notes.R")
 usethis::use_mit_license(copyright_holder = "Pedro Henrique Pereira Braga")
 
 # Make new R script titled matrix_addition
-usethis::use_r("dom")
+usethis::use_r("dbase_fn")
 
 ## Test
 use_test("testing_during_the_workshop")
@@ -48,6 +48,7 @@ use_data(x, y)
 ## Increment package version
 
 use_version(which = "minor")
+
 ## Add an RMarkdown Template
 
 use_rmarkdown_template(
@@ -56,3 +57,13 @@ use_rmarkdown_template(
   template_description = "A description of the template",
   template_create_dir = FALSE
 )
+
+## Check it
+
+use_github_action_check_release(
+  save_as = "R-CMD-check.yaml",
+  ignore = TRUE,
+  open = FALSE
+)
+
+usethis::use_github_action_check_standard()

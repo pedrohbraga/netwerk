@@ -2,6 +2,7 @@
 # netwerk
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/pedrohbraga/netwerk/workflows/R-CMD-check/badge.svg)](https://github.com/pedrohbraga/netwerk/actions)
 <!-- badges: end -->
 
 The goal of netwerk is to ...
