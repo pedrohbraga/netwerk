@@ -7,7 +7,6 @@ usethis::create_package(path)
 
 proj_activate(path)
 
-
 # Modify the description ----------------------------------------------
 use_mit_license("My Name")
 
@@ -20,13 +19,40 @@ use_readme_md()
 use_news_md()
 
 # Use git ------------------------------------------------------------
+
 use_git()
 
 use_github()
-2gh_token_help()
 
+gh_token_help()
 
 create_github_token()
 
 # Add this script to .Rbuildignore
-usethis::use_build_ignore("dev.R")
+usethis::use_build_ignore("notes.R")
+
+# Add mit_license to DESCRIPTION
+usethis::use_mit_license(copyright_holder = "Pedro Henrique Pereira Braga")
+
+# Make new R script titled matrix_addition
+usethis::use_r("dom")
+
+## Test
+use_test("testing_during_the_workshop")
+
+## Add data
+x <- 1
+y <- 2
+use_data(x, y)
+
+## Increment package version
+
+use_version(which = "minor")
+## Add an RMarkdown Template
+
+use_rmarkdown_template(
+  template_name = "Template Name",
+  template_dir = NULL,
+  template_description = "A description of the template",
+  template_create_dir = FALSE
+)
