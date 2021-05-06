@@ -15,3 +15,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Suggests: 
     MASS
+URL: https://github.com/pedrohbraga/netwerk
+BugReports: https://github.com/pedrohbraga/netwerk/issues
