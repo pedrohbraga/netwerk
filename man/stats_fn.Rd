@@ -10,7 +10,7 @@ stats_fn(x)
 \item{x}{binary link matrix}
 }
 \value{
-
+Something
 }
 \description{
 Calculating statistics of food webs

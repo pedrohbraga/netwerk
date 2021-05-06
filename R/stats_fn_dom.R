@@ -10,11 +10,13 @@
 #'
 #' @param x binary link matrix
 #'
-#' @return
+#' @return Something
+#'
+#' @importFrom stats sd
+#'
 #' @export
 #'
-#' @examples
-stats_fn = function(x) {
+stats_fn <- function(x) {
 
   # Calculate the number of species
   NS = nrow(x)

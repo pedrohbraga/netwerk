@@ -7,7 +7,7 @@
 dbase_fn(L)
 }
 \arguments{
-\item{L}{}
+\item{L}{is a matrix}
 }
 \value{
 A vector of the distance to the base for every species. Producers have a default distance of 1. Unconnected species have a distance of 0

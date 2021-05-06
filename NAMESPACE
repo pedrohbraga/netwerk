@@ -3,3 +3,4 @@
 export(dbase_fn)
 export(matrix_sum)
 export(stats_fn)
+importFrom(stats,sd)

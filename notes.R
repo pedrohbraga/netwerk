@@ -41,10 +41,13 @@ usethis::use_r("dbase_fn")
 use_test("testing_the_dbase_fn")
 
 ## Add data
+
 x <- 1
 y <- 2
-use_data(x, y)
 
+use_data(x, y, overwrite = TRUE)
+usethis::use_r("x")
+usethis::use_r("y")
 ## Increment package version
 
 use_version(which = "minor")
@@ -67,3 +70,16 @@ use_github_action_check_release(
 )
 
 usethis::use_github_action_check_standard()
+
+##
+
+roxygen2::roxygenize('.', roclets=c('rd', 'collate', 'namespace'))
+
+##
+
+install.packages("assertthat")
+
+##
+
+usethis::use_package("assertthat")
+
